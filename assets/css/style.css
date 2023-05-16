@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+:root{
+    --primary-color:#fff;
+    --secondary-color:rgb(22, 241, 22);
+    --black-color:#1d1c1c;
+
+}
+
+/* connect */
+.connect{
+    background: var(--black-color);
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 2.5rem;
+
+}
+
+/* contact */
+.connect .contact ul{
+    display: flex;
+    color: var(--primary-color);
+    padding: 0 .1rem;   
+}
+
+.connect .contact ul li{
+    padding-right: 1rem;
+}
+
+.connect .contact ul li a{
+    color: var(--primary-color);
+}
+
+.connect .contact ul li a:hover{
+    color: blue;
+}
+
+/* socials handles */
+.connect .socials ul{
+    display: flex;
+    padding: .3rem .7rem;
+}
+
+.connect .socials ul li i:hover{
+    color: aqua;
+    cursor: pointer;
+}
+
+/* navbar */
+.navbar{
+
+    background-image: url(/assets/img/bgt2.jpeg);
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    /* justify-items: center; */
+   
+}
+
+.navbar .logomenu{
+     display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red;
+    box-sizing: content-box; */
+    align-items: center;
+    border-bottom: 1px solid rgb(177, 177, 177);
+}
+
+.navbar .logo p{
+    text-transform: capitalize;
+    color: var(--secondary-color);
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 1.5rem 4rem;    
+}
+
+.navbar .menu{
+    margin: 0.4rem;
+    padding: .5rem;
+    align-items: center;    
+}
+
+.navbar .menu ul{
+    display: flex;
+}
+
+.navbar .menu ul li{
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    width: 130px;
+    position: relative;
+}
+
+.navbar .menu ul li a{
+    color: var(--primary-color);
+    padding: .7rem .7rem;
+    /* display: block; */
+    position: relative;
+}
+
+.navbar .menu ul li a:hover{
+    color: var(--secondary-color);
+}
+
+.navbar .menu ul li a:hover::before{
+    content: "";
+    width: 100%;
+    height: .71vh;
+    position: absolute;
+    top: 5.2rem;
+    left: -.1rem;
+    background-color: var(--primary-color);
+
+}
+
+.navbar .menu ul li>ul{
+    display: none;
+    font-weight: 300;
+}
+
+.navbar .menu ul li:hover > ul{
+    display: block;
+    position: absolute;
+}
+
+.navbar .menu ul li:hover ul li{
+    display: block;
+    background: var(--primary-color);   
+}
+
+.navbar .menu ul li:hover ul li a{
+    color: black;
+    display: block;
+    padding: .3rem .3rem;
+
+}
+
+.navbar .menu ul li:hover ul li a:hover{
+    background: grey;
+}
+
+.navbar .menu ul li .btnr{
+    background: var(--secondary-color);
+    color: var(--black-color);
+    border-radius: 8rem;
+    padding: .15rem .8rem;
+    font-size: 1.2rem;
+}
+
+.navbar .enjoy{
+    padding: 2rem;
+    color: var(--primary-color);
+    margin: 5rem auto;
+    border: 1px solid red;
+    width: fit-content;
+    
+    
+
+}
+
+.navbar .enjoy h2{
+    font-size: 4rem;
+}
+
+.navbar .enjoy p{
+    font-size: 1.5rem;
+}
+
+/* .navbar .enjoy .form{
+    box-sizing: border-box;
+    border: 3px solid --primary-color;
+    position: relative;
+    height: 3rem;
+    width: 80%;
+    background:var(--primary-color);
+    /* border-radius: 5rem; 
+    margin-top: 1.5rem;
+    border: 0;
+} */
+.navbar .enjoy .form .group{
+    position: relative;
+}
+
+.navbar .enjoy .form .input{
+    font-size: 2rem;
+    width: 95%;
+    border-radius: 3rem;
+    
+}
+
+.navbar .enjoy .form .wbtn{
+    position: absolute;
+    right: 5.7%;
+    font-size: inherit;
+    border-radius: 5rem;
+    color: var(--primary-color);
+    background: var(--secondary-color);
+    padding: .4rem 1rem;
+    top: 10%;
+    /* left: 2%; */
+    
+}
+
+/* about us */
+.about{
+    margin: 6rem 3rem;
+}
+.about .aboutimg img{
+    height: 25rem;
+    width: auto;
+    float: left;
+    margin-right: 4rem;
+}
+
+.about .aboutcont h4{
+    color: var(--secondary-color);
+    padding: 0 1.3rem;
+}
+
+.about .aboutcont h3{
+    color: rgb(43, 41, 41);
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: .8rem;
+}
+
+.about .aboutcont h3 span{
+    color: var(--secondary-color);   
+}
+
+.about .aboutcont p{
+    font-size: 1.1rem;
+}
+
+.about .aboutcont ul{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    font-size: 1.1rem;
+}
+
+.about .aboutcont .rmbtn{
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    font-size: 1rem;
+    padding: .3rem .5rem;
+    text-transform: capitalize;
+    margin: 2rem;
+}
+
+.bodyservices{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin: 2rem;
+    
+}
+
+.bodyservices .card{
+    box-shadow: .3rem .3rem .9rem grey;
+}
+
+.bodyservices .card cardimg{
+    height: 3rem;
+}
